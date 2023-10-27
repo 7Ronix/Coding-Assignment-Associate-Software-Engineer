@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="survey.css">
+</head>
+
+<body>
+    <div class="container mt-5">
+        <h2>Customer Survey Form</h2>
+
+        <div class="card">
+
+            <!-- <div class="card-header">
+                Survey Form
+            </div> -->
+
+            <div class="card-body">
+
+                <form id="survey-form">
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="col">
+                                <label for="name">Name</label>
+                            </div>
+                            <div class="col">
+                                <label for="email">Email</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <input type="text" class="form-control" id="name" required>
+                            </div>
+                            <div class="col">
+                                <input type="email" class="form-control" id="email" required>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- #1 -->
+                    <div class="form-group">
+                        <label>Is this first time You are using our products & service?</label>
+                        <div class="choose-group">
+                            <label class="choose-label">
+                                <input type="radio" name="choose" value="yes"> Yes
+                            </label>
+                            <label class="choose-label">
+                                <input type="radio" name="choose" value="no"> No
+                            </label>
+                        </div>
+                    </div>
+                    <!-- #2 -->
+                    <div class="form-group">
+                        <label>Would you suggest to your friends and colleagues?</label>
+                        <div class="option-group">
+                            <label class="option-label">
+                                <input type="radio" name="option" value="yes"> Yes
+                            </label>
+                            <label class="option-label">
+                                <input type="radio" name="option" value="no"> No
+                            </label>
+                        </div>
+                    </div>
+                    <!-- #3 -->
+                    <div class="form-group">
+                        <label>How satisfied are you with our company overall?</label>
+                        <div class="input-group">
+                            <label class="input-label">
+                                <input type="radio" name="input" value="satisfied"> Satisfied
+                            </label>
+                            <label class="input-label">
+                                <input type="radio" name="input" value="undecided"> Undecided
+                            </label>
+                            <label class="input-label">
+                                <input type="radio" name="input" value="unsatisfied"> Unsatisfied
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="suggestion">Do you have suggestion to improve our service?</label>
+                        <textarea type="text" class="form-control" id="suggestion" rows="3" required></textarea>
+                    </div>
+
+
+                    <div class="form-group">
+                        <button type="button" class="btn" id="submit-btn">Submit</button>
+                        <button type="button" class="btn reset" id="reset-btn">Reset</button>
+                    </div>
+                </form>
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <h3>Submitted Data</h3>
+            <div id="popup-data"></div>
+            <button class="btn" id="close-popup">Close</button>
+        </div>
+    </div>
+
+    <div class="footer">
+        <h6>@2023 Customer Survey Form. All Rights Reserved | Designed by Shubhranshu Das.</h6>
+    </div>
+
+    <script src="survey.js"></script>
+</body>
+
+</html>
